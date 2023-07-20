@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator BMI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="displayAll">
+      <div>
+        <div class="judul">Kalkulator BMI</div>
+        <div class="displayKalkulator">
+          <!-- Informasi Kalkulator BMI -->
+          <div class="detail">
+            <p>
+              <span style="font-weight: bold">Keunggulan fitur : </span><br />
+              1. Menghitung berat badan. <br />
+              2. Menentukan kategori berat badan ideal atau tidak. <br />
+              3. Mempersiapkan program penurunan berat badan.
+            </p>
+            <p>
+              Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita
+              hamil aatu menyusui tidak boleh mengandalkan pembacaan BMI ini)
+              dan tidak ada tindakn yang harus diambil berdasarkan nilainya
+              selain berkonsultasi dengan orang yang memmenuhi syarat seperti
+              dokter.
+            </p>
+            <p>
+              Kalkulator akan memberi Anda gambaran tentang perbandingan berat
+              badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI)
+              dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan
+              kuadrat tinggi badan Anda (dalam meter) atau
+              <span style="font-weight: bold">MBI=Kg/M<sup>2</sup></span
+              >.
+            </p>
+          </div>
+          <!-- Form -->
+          <form class="form-box" onsubmit="return false">
+            <div>
+              <p class="font">Jenis Kelamin</p>
+              <span class="gender">
+                <input type="radio" name="gender" value="Pria" />
+                <label>Pria</label>
+              </span>
+              <span class="gender">
+                <input type="radio" name="gender" value="Wanita" />
+                <label>Wanita</label>
+              </span>
+            </div>
+            <div>
+              <p class="font">Berat Badan (Kg)</p>
+              <input
+                id="bb"
+                type="text"
+                name="weight"
+                placeholder="Mohon diisi dengan angka"
+              />
+            </div>
+            <div>
+              <p class="font">Usia (Tahun)</p>
+              <input
+                id="usia"
+                type="text"
+                name="age"
+                placeholder="Mohon diisi dengan angka"
+              />
+            </div>
+            <div>
+              <p class="font">Tinggi Badan (Cm)</p>
+              <input
+                id="tb"
+                type="text"
+                name="height"
+                placeholder="Mohon diisi dengan angka"
+              />
+            </div>
+
+            <!-- Button -->
+            <div>
+              <button onclick="hitungBmi()" id="hitung">Hitung BMI</button>
+              <button id="reset" type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="hasil">
+        <div class="scoreStyle">
+          <p>Score BMI</p>
+          <p id="score">0</p>
+        </div>
+        <div class="statusStyle">
+          <p>Status</p>
+          <p id="status">-</p>
+        </div>
+
+        <!-- Tabel status berat badan -->
+        <table>
+          <tr>
+            <th>Score BMI</th>
+            <th>Status</th>
+            <th>Keterangan</th>
+          </tr>
+          <tr class="color1">
+            <td>Kurang dari 18,5</td>
+            <td>Kekurangan berat badan</td>
+            <td>
+              Lakukan olahraga secara teratur & perbanyak asupan makanan bergizi
+            </td>
+          </tr>
+          <tr class="color2">
+            <td>18,5 - 24,9</td>
+            <td>Ideal</td>
+            <td>Jaga pola hidup sehat & tetap berolahraga</td>
+          </tr>
+          <tr class="color3">
+            <td>25,0 - 29,9</td>
+            <td>Kelebihan berat badan</td>
+            <td>
+              Dianjurkan untuk menurunkan berat badan, atur pola makan & lakukan
+              olahraga secara teratur
+            </td>
+          </tr>
+          <tr class="color4">
+            <td>30,0 atau lebih</td>
+            <td>Kegemukan (Obesitas)</td>
+            <td>
+              Atur pola makan & jumlah kalori yang dikonsumsi serta perbanyak
+              olahraga
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Javascrip -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>
