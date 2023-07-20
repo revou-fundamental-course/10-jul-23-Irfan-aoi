@@ -1,0 +1,195 @@
+/* default font family yang digunakan */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* styling Judul "Kalkulator BMI" */
+.judul {
+  border: 10px solid #949e28;
+  border-radius: 50px 50px 0 0;
+  border-bottom: none;
+  padding: 30px;
+  width: 889px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  align-item: center;
+  color: #9e2859;
+}
+
+/* styling kotak Form */
+.form-box {
+  border: 3px solid #949e28;
+  border-radius: 0 0 10px 0;
+  padding: 30px;
+  width: 350px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* styling element input text */
+input[type="text"] {
+  width: 300px;
+  font-size: 18px;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #949e28;
+}
+
+/* ukuran  font */
+.font {
+  font-size: medium;
+  font-weight: bold;
+}
+
+/* memberikan jarak antar huruf pada inupt radio */
+.gender {
+  letter-spacing: 1px;
+  padding-right: 80px;
+  font-size: 18px;
+}
+
+/* styling untuk basic tombol */
+button {
+  margin-top: 40px;
+  margin-right: 10px;
+  width: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  border-style: none;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* warna tombol hitung */
+#hitung {
+  background-color: #599e28;
+}
+
+/* Hover tombol hitung */
+#hitung:hover {
+  background-color: #949e28;
+  cursor: pointer;
+}
+
+/* warna tombol rest */
+#reset {
+  background-color: #9e2859;
+}
+
+/* Hover tombol reset */
+#reset:hover {
+  background-color: #f33e89;
+  cursor: pointer;
+}
+
+/* styling bagian detail "keunggulan fitur" */
+.detail {
+  background-color: #bac916;
+  width: 450px;
+  text-align: justify;
+  padding: 100px 50px 50px 50px;
+  border: 3px solid #949e28;
+  border-radius: 0 0 0 10px;
+  border-right: none;
+}
+
+/* memberikan margin bawah di setiap paragraf "keunggulan fitur" */
+.detail p {
+  margin-bottom: 40px;
+}
+
+/* flex "detail keunggulan fitur" dengan "kotak form" */
+.displayKalkulator {
+  display: flex;
+}
+
+/* flex bagian "kalkulator (kiri)" dengan "Result (kanan)" */
+.displayAll {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hasil {
+  text-align: center;
+}
+
+/* Styling score BMI - Start */
+.scoreStyle {
+  margin: 50px;
+  font-size: 30px;
+  color: #9e2859;
+}
+
+#score {
+  font-size: 150px;
+  color: #599e28;
+}
+/* Styling score BMI- End */
+
+/* Styling status BMI - Start */
+.statusStyle {
+  margin: 50px;
+  font-size: 30px;
+  color: #9e2859;
+}
+
+#status {
+  font-size: 50px;
+  color: #599e28;
+}
+/* Styling status BMI - End*/
+
+/* styling tabel - Start */
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+table {
+  width: 700px;
+}
+
+th {
+  padding: 20px;
+  font-size: 20px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+/* styling tabel - End */
+
+/* Styling warna tabel - Start */
+.color1 {
+  background-color: #e3c137;
+}
+
+.color2 {
+  background-color: #76b5c5;
+}
+
+.color3 {
+  background-color: #d36b76;
+}
+
+.color4 {
+  background-color: #c02b3b;
+}
+/* Styling warna tabel - End*/
