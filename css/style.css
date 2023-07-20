@@ -1,45 +1,43 @@
 /* default font family yang digunakan */
 * {
-  padding: 0;
-  margin: 0;
   font-family: "Montserrat", sans-serif;
 }
 
 /* styling Judul "Kalkulator BMI" */
 .judul {
-  border: 10px solid #949e28;
+  border: 5px solid #949e28;
   border-radius: 50px 50px 0 0;
   border-bottom: none;
   padding: 30px;
-  width: 889px;
-  margin-bottom: 5px;
+  width: 700px;
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
   align-item: center;
   color: #9e2859;
+  box-sizing: border-box;
 }
 
 /* styling kotak Form */
 .form-box {
-  border: 3px solid #949e28;
+  border: 2px solid #949e28;
   border-radius: 0 0 10px 0;
-  padding: 30px;
-  width: 350px;
-  height: 600px;
+  padding: 10px 30px;
+  width: 300px;
+  height: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  box-sizing: border-box;
 }
 
 /* styling element input text */
-input[type="text"] {
-  width: 300px;
-  font-size: 18px;
-  padding: 5px 20px;
-  margin: 8px 0;
+input[type="number"] {
+  width: 200px;
+  font-size: 12px;
+  padding-left: 10px;
   box-sizing: border-box;
   border-top: none;
   border-right: none;
@@ -49,25 +47,24 @@ input[type="text"] {
 
 /* ukuran  font */
 .font {
-  font-size: medium;
+  font-size: 12px;
   font-weight: bold;
 }
 
 /* memberikan jarak antar huruf pada inupt radio */
 .gender {
   letter-spacing: 1px;
-  padding-right: 80px;
-  font-size: 18px;
+  padding-right: 40px;
+  font-size: 12px;
 }
 
 /* styling untuk basic tombol */
 button {
-  margin-top: 40px;
   margin-right: 10px;
-  width: 150px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 15px;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
   border-style: none;
   letter-spacing: 1px;
   border-radius: 10px;
@@ -99,17 +96,15 @@ button {
 /* styling bagian detail "keunggulan fitur" */
 .detail {
   background-color: #bac916;
-  width: 450px;
+  width: 400px;
+  height: 450px;
   text-align: justify;
-  padding: 100px 50px 50px 50px;
-  border: 3px solid #949e28;
+  border: 2px solid #949e28;
   border-radius: 0 0 0 10px;
   border-right: none;
-}
-
-/* memberikan margin bawah di setiap paragraf "keunggulan fitur" */
-.detail p {
-  margin-bottom: 40px;
+  box-sizing: border-box;
+  font-size: 13px;
+  padding: 50px 20px;
 }
 
 /* flex "detail keunggulan fitur" dengan "kotak form" */
@@ -129,26 +124,24 @@ button {
 
 /* Styling score BMI - Start */
 .scoreStyle {
-  margin: 50px;
-  font-size: 30px;
+  font-size: 20px;
   color: #9e2859;
 }
 
 #score {
-  font-size: 150px;
+  font-size: 50px;
   color: #599e28;
 }
 /* Styling score BMI- End */
 
 /* Styling status BMI - Start */
 .statusStyle {
-  margin: 50px;
-  font-size: 30px;
+  font-size: 20px;
   color: #9e2859;
 }
 
 #status {
-  font-size: 50px;
+  font-size: 30px;
   color: #599e28;
 }
 /* Styling status BMI - End*/
@@ -159,19 +152,19 @@ th,
 td {
   border-collapse: collapse;
   border: 1px solid;
+  font-size: 12px;
+  padding: 10px;
 }
 
 table {
-  width: 700px;
+  width: 600px;
 }
 
 th {
-  padding: 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 td {
-  padding: 10px;
   text-align: center;
 }
 /* styling tabel - End */
